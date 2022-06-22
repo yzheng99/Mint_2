@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".login.LoginMainActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+
+        android:layout_height="65dp"
+        android:background="#F6E7E7"
+        android:fontFamily="monospace"
+        android:text="Enter medicine or item name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/atx_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FAF6F6"
+        android:hint="Medicine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FBF9F9"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:contentDescription="Type"
+            android:spinnerMode="dropdown" />
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+
+            android:layout_height="65dp"
+
+            android:background="#F6E7E7"
+            android:fontFamily="monospace"
+            android:text="Type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FBF9F9"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner_option"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:contentDescription="Option"
+            android:spinnerMode="dropdown" />
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+
+            android:layout_height="65dp"
+            android:background="#F6E7E7"
+            android:fontFamily="monospace"
+            android:text="Option"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FBF9F9"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="Post code"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+
+            android:layout_height="65dp"
+            android:background="#F6E7E7"
+            android:fontFamily="monospace"
+            android:text="Post Code"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/btPharmcy"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Map" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:background="@color/white"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
